@@ -1,0 +1,44 @@
+# Local tools and environments
+.tools/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local backups and logs
+backup/
+robocopy_log.txt
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Frontend dependencies and build output
+front/node_modules/
+front/.svelte-kit/
+front/build/
+front/.output/
+front/.vercel/
+front/.netlify/
+front/.wrangler/
+
+# Models are downloaded during setup instead of being committed.
+front/static/models/*.onnx
+front/static/ocr/
+front/static/onnx/
+
+# Local test material and one-off model conversion scripts
+front/slide-*.png
+front/test-onnx*.mjs
+front/tok.mjs
+
+# Unused local fonts with unknown redistribution terms
+*.ttf
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+
